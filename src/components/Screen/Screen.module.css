@@ -1,0 +1,10 @@
+.screen{
+    width: 750px;
+    display: flex;
+    border: solid 5px black;
+}
+
+.column{
+    display: flex;
+    flex-direction: row;
+}
