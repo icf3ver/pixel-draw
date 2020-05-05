@@ -1,10 +1,7 @@
 .screen{
+    margin: auto;
     width: 750px;
     display: flex;
+    flex-direction: column;
     border: solid 5px black;
-}
-
-.column{
-    display: flex;
-    flex-direction: row;
 }

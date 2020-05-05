@@ -1,0 +1,6 @@
+.palette{
+    margin: auto;
+    width: 300px;
+    display: flex;
+    border: 5px solid black;
+}
