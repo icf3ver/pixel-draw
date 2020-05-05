@@ -3,18 +3,26 @@ import Screen from "../Screen/Screen";
 import { Props, Colors} from "./types";
 import styles from "./App.module.css";
 export default class App extends React.PureComponent<Props, Colors> {
-    positions: Colors = {
+    state: Colors = {
         pixelPositions: {},
-        selectedColor: "white"
+        selectedColor: "red"
     };
 
-    handlePixelClick = (tileId: string) => {
-        //TODO
+    handlePixelClick = (pixelId: string) => {
+        const {pixelPositions, selectedColor} = this.state;
+        console.log(pixelId);
+        
+        const newPixelPositions = {
+            ...pixelPositions,
+            [pixelId]: selectedColor
+        };
+
+        this.setState({pixelPositions: newPixelPositions, selectedColor: selectedColor});
     };
 
     renderColumn() {
         const { columns, rows } = this.props;
-        const { pixelPositions } = this.positions;
+        const { pixelPositions } = this.state;
         return (
             <Screen
             columns = {columns}

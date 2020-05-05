@@ -10,7 +10,7 @@ export default class Column extends React.PureComponent<Props>{
         const pixels = [];
 
         for (let row = 0; row < rows; row++) {
-            const pixelId = '${row}:${column}';
+            const pixelId = row +  ":" + column;
             const pixelColor = pixelPositions[pixelId];
             pixels.push(
                 <Pixel

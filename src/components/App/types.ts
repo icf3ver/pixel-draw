@@ -1,8 +1,8 @@
 export interface PixelPositions {
-    [key: string]: ColorTypes;
+    [key: string]: Color;
 }
 
-export type ColorTypes = "red" | "green" | "blue" | "white";
+export type Color = "red" | "green" | "blue" | "white" | "";
 
 export interface Props {
     columns: number;
@@ -11,5 +11,5 @@ export interface Props {
 
 export interface Colors {
     pixelPositions: PixelPositions;
-    selectedColor: string;
+    selectedColor: Color;
 }
