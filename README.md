@@ -1,7 +1,7 @@
-#Pixel Draw
-##Purpose 
+# Pixel Draw
+## Purpose 
 Build a simple React app that lets the user draw on a grid
 
-##Example
+## Example
 
-![example] img/image.png
+![example](img/image.png)
